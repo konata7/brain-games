@@ -4,22 +4,21 @@ const gameLoop = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
 
-  let a;
-  let b;
-  if (num1 > num2) {
-    a = num1;
-    b = num2;
-  } else {
-    a = num2;
-    b = num1;
-  }
-
-  const question = `${a} ${b}`;
+  const question = `${num1} ${num2}`;
   const gcd = (numA, numB) => {
-    if (numA % numB === 0) return numB;
-    return gcd(numB, numA % numB);
+    let a;
+    let b;
+    if (numA > numB) {
+      a = numA;
+      b = numB;
+    } else {
+      a = numB;
+      b = numA;
+    }
+    if (a % b === 0) return b;
+    return gcd(b, a % b);
   };
-  const correctAnswer = gcd(a, b).toString();
+  const correctAnswer = gcd(num1, num2).toString();
   return { question, correctAnswer };
 };
 
