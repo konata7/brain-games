@@ -2,7 +2,8 @@ import readlineSync from 'readline-sync';
 import brainCalc from './games/brain-calc.js';
 import brainEven from './games/brain-even.js';
 import brainGcd from './games/brain-gcd.js';
-import brainProgression from "./games/brain-progression.js";
+import brainProgression from './games/brain-progression.js';
+import brainPrime from './games/brain-prime.js';
 
 const runGame = (game) => {
   const name = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
@@ -24,6 +25,10 @@ const runGame = (game) => {
     case 'brain-progression':
       console.log('What number is missing in the progression?');
       gameExec = brainProgression;
+      break;
+    case 'brain-prime':
+      console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+      gameExec = brainPrime;
       break;
     default:
   }
