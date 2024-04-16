@@ -17,6 +17,7 @@ const calculate = (operand1, operand2, operator) => {
   return res;
 };
 
+const gameTask = 'What is the result of the expression?';
 const gameLoop = () => {
   let operator;
   const operand1 = getRandomInt(0, 100);
@@ -36,4 +37,4 @@ const gameLoop = () => {
   return { question, correctAnswer };
 };
 
-export default gameLoop;
+export { gameTask, gameLoop };

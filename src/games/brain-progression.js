@@ -11,6 +11,8 @@ const getProgression = (first, step, length, missingIndex) => {
   progression.missingMember = (first + step * missingIndex).toString();
   return progression;
 };
+
+const gameTask = 'What number is missing in the progression?';
 const gameLoop = () => {
   const first = getRandomInt(0, 20);
   const step = getRandomInt(1, 10);
@@ -23,4 +25,4 @@ const gameLoop = () => {
   return { question, correctAnswer };
 };
 
-export default gameLoop;
+export { gameTask, gameLoop };

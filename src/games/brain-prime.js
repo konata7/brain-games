@@ -6,10 +6,12 @@ const isPrime = (num) => {
   }
   return num > 1;
 };
+
+const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const gameLoop = () => {
   const question = getRandomInt(1, 100);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return { question, correctAnswer };
 };
 
-export default gameLoop;
+export { gameTask, gameLoop };

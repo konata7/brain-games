@@ -13,6 +13,8 @@ const gcd = (numA, numB) => {
   if (a % b === 0) return b;
   return gcd(b, a % b);
 };
+
+const gameTask = 'Find the greatest common divisor of given numbers.';
 const gameLoop = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
@@ -22,4 +24,4 @@ const gameLoop = () => {
   return { question, correctAnswer };
 };
 
-export default gameLoop;
+export { gameTask, gameLoop };
