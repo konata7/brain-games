@@ -10,7 +10,7 @@ const calculate = (operand1, operand2, operator) => {
       res = (operand1 - operand2).toString();
       break;
     case '*':
-      res = (operand1 - operand2).toString();
+      res = (operand1 * operand2).toString();
       break;
     default:
   }
@@ -32,7 +32,7 @@ const gameLoop = () => {
     default:
       operator = '*';
   }
-  const question = `${operand1} ${operator} ${operand1}`;
+  const question = `${operand1} ${operator} ${operand2}`;
   const correctAnswer = calculate(operand1, operand2, operator);
   return { question, correctAnswer };
 };
