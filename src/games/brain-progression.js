@@ -20,7 +20,7 @@ const gameLoop = () => {
 
   const progression = getProgression(first, step, length, missingIndex);
   const question = getProgressionString(progression, missingIndex);
-  const correctAnswer = progression[missingIndex];
+  const correctAnswer = progression[missingIndex].toString();
   return { question, correctAnswer };
 };
 
