@@ -1,3 +1,8 @@
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/konata7/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/konata7/qa-auto-engineer-javascript-project-44/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/fd026661cf442b143f25/maintainability)](https://codeclimate.com/github/konata7/qa-auto-engineer-javascript-project-44/maintainability)
+
+
 # Brain games
 Brain games is a collection of mind training games.
 
@@ -61,6 +66,3 @@ brain-prime
 
 [![asciicast](https://asciinema.org/a/pcfdRT2szNBpvzGCW3OYobuxc.svg)](https://asciinema.org/a/pcfdRT2szNBpvzGCW3OYobuxc)
 
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/konata7/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/konata7/qa-auto-engineer-javascript-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/fd026661cf442b143f25/maintainability)](https://codeclimate.com/github/konata7/qa-auto-engineer-javascript-project-44/maintainability)
