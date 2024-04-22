@@ -24,7 +24,7 @@ const gameLoop = () => {
   const operand2 = getRandomInt(0, 100);
   const operators = '+-*';
 
-  const operator = operators[getRandomInt(0, operators.length)];
+  const operator = operators[getRandomInt(0, operators.length - 1)];
   const question = `${operand1} ${operator} ${operand2}`;
   const correctAnswer = calculate(operand1, operand2, operator);
   return { question, correctAnswer };
