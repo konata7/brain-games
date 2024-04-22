@@ -1,17 +1,8 @@
 import getRandomInt from '../utils.js';
 
 const gcd = (numA, numB) => {
-  let a;
-  let b;
-  if (numA > numB) {
-    a = numA;
-    b = numB;
-  } else {
-    a = numB;
-    b = numA;
-  }
-  if (a % b === 0) return b;
-  return gcd(b, a % b);
+  if (numB === 0) return numA;
+  return gcd(numB, numA % numB);
 };
 
 const gameTask = 'Find the greatest common divisor of given numbers.';
