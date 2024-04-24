@@ -5,10 +5,10 @@ const getProgression = (first, step, length) => {
   for (let i = 0; i < length; i += 1) progression.push(first + step * i);
   return progression;
 };
-const getProgressionString = (progression, missingIndex) => {
+const maskElementInProgression = (progression, missingIndex) => {
   const progressionCopy = [...progression];
   progressionCopy[missingIndex] = '..';
-  return progressionCopy.join(' ');
+  return progressionCopy;
 };
 
 const gameTask = 'What number is missing in the progression?';
@@ -19,7 +19,7 @@ const gameLoop = () => {
   const missingIndex = getRandomInt(0, length - 1);
 
   const progression = getProgression(first, step, length, missingIndex);
-  const question = getProgressionString(progression, missingIndex);
+  const question = maskElementInProgression(progression, missingIndex).join(' ');
   const correctAnswer = progression[missingIndex].toString();
   return { question, correctAnswer };
 };
